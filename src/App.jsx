@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./style.css";
+import Navbar from "./components/NavBar";
+import ProjectList from "./components/ProjectList";
+import Contact from "./components/Contact";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <Navbar />
+      <main>
+        <section id="home">
+          <h1>Hi, I'm Yan Chi.</h1>
+          <p>
+            I’m a <strong>Computer Science student and front-end developer</strong> 
+            interested in building clean, user-focused web applications. I am familiar with 
+            tools like <strong>React, Node.js, JavaScript, and Python</strong>. I am dedicated 
+            and flexible, <strong>excelling in team environments</strong>, and I thrive in collaborative 
+            team environments where I can learn and adapt new technologies quickly.
+          </p>
+        </section>
+
+        <section id="projects">
+          <h2>Projects</h2>
+          <ProjectList />
+        </section>
+
+        <section id="tech">
+          <h2>Tech Stack</h2>
+          <ul>
+            <li><strong>Languages:</strong> Python, C#, HTML/CSS, JavaScript, Java, Kotlin, SQL</li>
+            <li><strong>Frameworks:</strong> Node.js, React, Flask, .NET</li>
+            <li><strong>Tools:</strong> Git, Docker, Linux</li>
+          </ul>
+        </section>
+
+        <Contact />
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
