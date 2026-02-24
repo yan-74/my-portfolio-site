@@ -36,7 +36,7 @@ export default [
     title: "MonoGame Fireworks Simulator",
     description: "A MonoGame-based application that simulates fireworks physics and particles, featuring custom firework displays",
     tech: ["C#", "MonoGame"],
-    video: "/assets/fireworks.mp4",
+    video: "https://www.youtube.com/embed/hYLcDrwOMYE",
     link: "https://gitlab.com/dawson-cst-cohort-2026/510/section2/ng/fireworks"
   }
 ];

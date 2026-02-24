@@ -7,10 +7,14 @@ export default function ProjectList() {
         <div key={index} className="project">
           {project.type === "video" ? (
             <div className="project-video">
-              <video width="320" height="240" controls>
-                <source src={project.video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <iframe
+                width="320"
+                height="240"
+                src={project.video}
+                title={project.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           ) : (
             <div className="project-image">
