@@ -1,0 +1,40 @@
+/* ---------- Tech stack & Utilities ---------- */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+#contact a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+a img {
+  width: 50px;
+  height: auto;
+}
+
+/* secondary horizontal list (icons) */
+ul.icons{
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 2rem 0;
+  list-style: none;
+}
+
+ul.icons li{
+  text-align: center;
+}
+
+ul.icons a:hover img {
+  transform: translateY(-2px);
+}
