@@ -1,0 +1,10 @@
+/* ---------- Mobile ---------- */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+}

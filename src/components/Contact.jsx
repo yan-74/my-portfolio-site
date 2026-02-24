@@ -6,21 +6,21 @@ export default function Contact() {
       <ul>
         <li>
           <a href="https://github.com/yan-74" target="_blank">
-            <img src="/assets/github.png" alt="GitHub" />
+            <img src="assets/github.png" alt="GitHub" />
           </a>
-          <p>github</p>
+          <p>GitHub</p>
         </li>
         <li>
           <a href="https://gitlab.com/ngyan74" target="_blank">
-            <img src="/assets/gitlab.svg" alt="GitLab" />
+            <img src="assets/gitlab.png" alt="GitLab" />
           </a>
-          <p>gitlab</p>
+          <p>GitLab</p>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/yan-chi-ng-398bb9321" target="_blank">
-            <img src="/assets/linkedin.png" alt="LinkedIn" />
+            <img src="assets/linkedin.png" alt="LinkedIn" />
           </a>
-          <p>Linkedin</p>
+          <p>LinkedIn</p>
         </li>
       </ul>
     </section>

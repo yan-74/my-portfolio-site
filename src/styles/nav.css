@@ -1,0 +1,22 @@
+/* ---------- Navigation ---------- */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(8px);
+  padding: 1rem 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  border-bottom: 1px solid #1e293b;
+  z-index: 10;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
