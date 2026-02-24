@@ -8,7 +8,7 @@ export default function ProjectList() {
           {project.type === "video" ? (
             <div className="project-video">
               <iframe
-                width="320"
+                width="500"
                 height="240"
                 src={project.video}
                 title={project.title}

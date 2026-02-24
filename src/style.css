@@ -113,6 +113,11 @@ h3 {
   object-fit: contain
 }
 
+.project iframe {
+  display: block;
+  margin: 0 auto;
+}
+
 .project p {
   color: var(--muted);
 }
