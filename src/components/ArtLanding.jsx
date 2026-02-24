@@ -6,9 +6,6 @@ export default function ArtLanding() {
       <header>
         <h1>Art Portfolio</h1>
         <p>Welcome to my art side — sketches, digital paintings, and experiments.</p>
-        <p>
-          <Link to="/">Back to Home</Link>
-        </p>
       </header>
 
       <section className="gallery">

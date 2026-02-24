@@ -1,0 +1,48 @@
+/* ---------- Home landing ---------- */
+.home-landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: calc(100vh - 30rem);
+  padding: 2rem 1.5rem;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.home-landing .home-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-landing h1,
+.home-landing p {
+  margin: 0;
+}
+
+/* About section profile picture */
+.about {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+}
+
+.about img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.about p {
+  margin: 0;
+}
+
+.home-landing a {
+  font-size: 1.5rem;
+}

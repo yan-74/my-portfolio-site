@@ -38,3 +38,46 @@ ul.icons li{
 ul.icons a:hover img {
   transform: translateY(-2px);
 }
+
+#projects h2{
+  text-align: center;
+}
+
+/* Backwards-compat: style contact lists that use plain <ul> */
+#contact ul {
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 2rem 0;
+  list-style: none;
+}
+
+#contact ul li {
+  text-align: center;
+}
+
+#contact a:hover img {
+  transform: translateY(-2px);
+}
+
+/* Center contact section and ensure icons are centered */
+#contact {
+  text-align: center;
+}
+
+#contact ul {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center tech stack section */
+#tech {
+  text-align: center;
+}
+
+#tech ul {
+  display: inline-block; /* keeps list vertical but centered */
+  padding-left: 0;
+  margin: 1rem auto;
+  text-align: left; /* keep items readable */
+}

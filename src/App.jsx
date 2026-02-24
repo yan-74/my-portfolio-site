@@ -7,14 +7,14 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <main>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cs" element={<CSLanding />} />
         <Route path="/art" element={<ArtLanding />} />
       </Routes>
-    </div>
+    </main>
   );
 }
 

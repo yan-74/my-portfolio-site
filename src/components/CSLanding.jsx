@@ -3,7 +3,7 @@ import Contact from "./Contact";
 
 export default function CSLanding() {
   return (
-    <main>
+    <>
       <section id="home">
         <h1>Hi, I'm Yan Chi.</h1>
         <p>
@@ -30,6 +30,6 @@ export default function CSLanding() {
       </section>
 
       <Contact />
-    </main>
+    </>
   );
 }

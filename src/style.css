@@ -3,6 +3,7 @@
 @import "./styles/layout.css";
 @import "./styles/nav.css";
 @import "./styles/headings.css";
+@import "./styles/home.css";
 @import "./styles/projects.css";
 @import "./styles/utilities.css";
-@import "./styles/responsive.css";
+@import "./styles/mobile.css";

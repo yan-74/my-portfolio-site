@@ -16,12 +16,12 @@ export default [
     link: "https://gitlab.com/sever-side-cult-2025/prj-grp2-ng/-/tree/Deployment?ref_type=heads"
   },
   {
-    type: "image",
-    title: "Metro Trip Planner",
-    description: "Simple React app that displays metro routes and station info based on user input",
-    tech: ["React", "Express", "Vite"],
-    image: "assets/project3.png",
-    link: "https://gitlab.com/dawson-cst-cohort-2026/520/section2/YanChiNg/assignment2/-/tree/A2-resub?ref_type=heads"
+    type: "video",
+    title: "MonoGame Fireworks Simulator",
+    description: "A MonoGame-based application that simulates fireworks physics and particles, featuring custom firework displays",
+    tech: ["C#", "MonoGame"],
+    video: "https://www.youtube.com/embed/hYLcDrwOMYE",
+    link: "https://gitlab.com/dawson-cst-cohort-2026/510/section2/ng/fireworks"
   },
   {
     type: "image",
@@ -32,11 +32,11 @@ export default [
     link: "https://gitlab.com/dawson-cst-cohort-2026/511/section2/David-Janelle-Yan-Chi/mobile-dev-project"
   },
   {
-    type: "video",
-    title: "MonoGame Fireworks Simulator",
-    description: "A MonoGame-based application that simulates fireworks physics and particles, featuring custom firework displays",
-    tech: ["C#", "MonoGame"],
-    video: "https://www.youtube.com/embed/hYLcDrwOMYE",
-    link: "https://gitlab.com/dawson-cst-cohort-2026/510/section2/ng/fireworks"
-  }
+    type: "image",
+    title: "Metro Trip Planner",
+    description: "Simple React app that displays metro routes and station info based on user input",
+    tech: ["React", "Express", "Vite"],
+    image: "assets/project3.png",
+    link: "https://gitlab.com/dawson-cst-cohort-2026/520/section2/YanChiNg/assignment2/-/tree/A2-resub?ref_type=heads"
+  },
 ];
