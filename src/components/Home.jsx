@@ -14,8 +14,25 @@ export default function Home() {
       </section>
 
       <section>
-        <h3>About Me:</h3>
         <section className="about">
-          <img src="assets/pfp.png" alt="Profile Picture"></img>
+          <h3 className="about-title">About Me</h3>
+          <div className="about-body">
+            <img src='assets/pfp.png' alt="Profile Picture" id="pfp"/>
             <div className="about-text">
-              <p className="bio">I'm a passionate front-end developer with a strong interest in both Computer Science and Art. My journey in web development began with a curiosity about how to bring creative ideas to life on the web. I specialize in creating responsive, user-friendly websites and applications using modern technologies like React, JavaScript, and CSS.</p
+              <p className="name"><strong>Yan Chi Ng</strong></p>
+              <p className="cnName"><strong>伍恩賜</strong><span></span>
+                <img className="flag flag--hk" src='assets/hk.png' alt="HK flag" />
+              </p>
+              <p className="bio">Hi! I'm a developer and artist currently studying Computer Science Technology at Dawson College. I...</p>
+              <ul>
+                <li>have a strong interest in front-end development and UI/UX design,</li>
+                <li>enjoy creating projects that combine my technical skills with my artistic creativity,</li>
+                <li>and thrive in collaborative team environments where I can learn and adapt new technologies quickly!</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+  );
+}

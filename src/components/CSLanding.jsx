@@ -5,13 +5,12 @@ export default function CSLanding() {
   return (
     <>
       <section id="home">
-        <h1>Hi, I'm Yan Chi.</h1>
+        <h1>Computer Science Portfolio</h1>
         <p>
-          I’m a <strong>Computer Science student and front-end developer</strong>
+          I’m a <strong>Computer Science student and front-end developer </strong>
           interested in building clean, user-focused web applications. I am familiar with
           tools like <strong>React, Node.js, JavaScript, and Python</strong>. I am dedicated
-          and flexible, <strong>excelling in team environments</strong>, and I thrive in collaborative
-          team environments where I can learn and adapt new technologies quickly.
+          and flexible, <strong>excelling in team environments</strong>, and communication is one of my strengths.
         </p>
       </section>
 
