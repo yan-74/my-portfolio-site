@@ -6,6 +6,8 @@ nav {
   backdrop-filter: blur(8px);
   padding: 1rem 1.5rem;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 1.5rem;
   border-bottom: 1px solid #1e293b;
   z-index: 10;
@@ -19,4 +21,43 @@ nav a {
 
 nav a:hover {
   color: var(--accent);
+}
+
+/* Layout groups inside the nav */
+.links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.socials a img {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
+/* Prevent anchor targets from being hidden behind the sticky nav.
+   Adjust `--nav-offset` if your nav height changes. */
+:root {
+  --nav-offset: 72px;
+}
+
+/* Only apply scroll offset to specific in-page section targets used by anchor links */
+[id="projects"],
+[id="tech"],
+[id="contact"],
+[id="digital"],
+[id="physical"],
+[id="3d"] {
+  scroll-margin-top: var(--nav-offset);
+}
+
+nav p {
+  margin: 0;
 }

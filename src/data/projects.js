@@ -31,12 +31,12 @@ export default [
     image: "assets/project4.png",
     link: "https://gitlab.com/dawson-cst-cohort-2026/511/section2/David-Janelle-Yan-Chi/mobile-dev-project"
   },
-  {
+  /*{
     type: "image",
     title: "Metro Trip Planner",
     description: "Simple React app that displays metro routes and station info based on user input",
     tech: ["React", "Express", "Vite"],
     image: "assets/project3.png",
     link: "https://gitlab.com/dawson-cst-cohort-2026/520/section2/YanChiNg/assignment2/-/tree/A2-resub?ref_type=heads"
-  },
+  },*/
 ];

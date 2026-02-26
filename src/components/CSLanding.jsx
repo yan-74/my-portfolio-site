@@ -3,7 +3,7 @@ import Contact from "./Contact";
 
 export default function CSLanding() {
   return (
-    <>
+    <div className="cs-landing">
       <section id="home">
         <h1>Computer Science Portfolio</h1>
         <p>
@@ -29,6 +29,6 @@ export default function CSLanding() {
       </section>
 
       <Contact />
-    </>
+    </div>
   );
 }

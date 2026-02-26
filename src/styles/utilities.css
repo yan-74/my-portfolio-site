@@ -39,10 +39,6 @@ ul.icons a:hover img {
   transform: translateY(-2px);
 }
 
-#projects h2{
-  text-align: center;
-}
-
 /* Backwards-compat: style contact lists that use plain <ul> */
 #contact ul {
   display: flex;
