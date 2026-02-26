@@ -24,7 +24,7 @@ export default function ProjectList() {
           <h3>{project.title}</h3>
           <p>{project.description}</p>
           <p><strong>Tech:</strong> {project.tech.join(", ")}</p>
-          <a href={project.link} target="_blank">View on GitLab</a>
+          <a href={project.link} target="_blank">View on GitHub</a>
         </div>
       ))}
     </div>
