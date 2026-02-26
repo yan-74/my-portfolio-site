@@ -23,7 +23,7 @@ export default function Navbar() {
           <>
             <p>|</p>
             <a href="#digital">Digital</a>
-            <a href="#physical">Physical</a>
+            <a href="#traditional">Traditional</a>
             <a href="#3d">3D Modeling & Animation</a>
           </>
         )}
