@@ -21,17 +21,17 @@ export default [
     image: "assets/art/miorine.png",
   },
   {
-    type: "physical",
+    type: "traditional",
     title: "Masquerade of the Guilty",
     description: "I created this piece based on the character Furina from Genshin Impact. I did this piece on paper in pencil, since I felt that the black and white contrast would be a good way to show the somber nature of her story, and I wanted to use more ragged lines for shading to represent raw emotion. While doing traditional art, I found it easier to stop obsessing over small details and just draw more freely, which is something I struggle with when doing digital art. Since color wasn't a factor, I was able to focus more on the composition and the shading, which I'm really proud of. I felt I was able to bring out the shadows and highlights well, creating the affect of a spotlight shining on the hat. I do feel that my lines felt a little random at times, especially when it came to the direction of the shadows, but I was happy with how the piece turned out overall despite my inexperience with the medium.",
     Medium: "Pencil and Black Pen on Paper",
     image: "assets/art/furina_hat.jpg",
   },
   {
-    type: "physical",
+    type: "traditional",
     title: "Scribner Building",
     description: "I drew this piece during art class in school, and I picked it because it contained something I struggled with a lot: straight lines and buildings. I challenged myself by choosing a tall building with lots of sharp angles and details, with enough depth on the surface of the building to allow for shadows. I remember my teacher telling me to not use a ruler for the lines, and to practice line control, which was really difficult with all the straight lines and symmetry on the building. I also had to make sure to get the perspective right, which was another challenge for me. It was effective at teaching me line control though, and the importance of using long, confident strokes instead of short, sketchy ones. ",
-    Medium: "Digital Painting on Sketchbook",
+    Medium: "Black Pen on Paper",
     image: "assets/art/building.jpg",
   },
   {

@@ -5,7 +5,7 @@ export default function CSLanding() {
   return (
     <div className="cs-landing">
       <section id="home">
-        <h1>Computer Science Portfolio</h1>
+        <h1>Computer Science Works</h1>
         <p>
           I’m a <strong>Computer Science student and front-end developer </strong>
           interested in building clean, user-focused web applications. I am familiar with

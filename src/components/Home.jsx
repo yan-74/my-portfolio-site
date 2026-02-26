@@ -7,9 +7,9 @@ export default function Home() {
         <h1>Hi, I'm Yan Chi.</h1>
         <p>I'm a front-end developer passionate about combining my two interests: Computer Science and Art. Click on either portfolio below to explore what I've done!</p>
         <nav className="home-links">
-          <Link to="/cs"><strong>Computer Science Portfolio</strong></Link>
+          <Link to="/cs"><strong>Computer Science Works</strong></Link>
           <span> · </span>
-          <Link to="/art"><strong>Art Portfolio</strong></Link>
+          <Link to="/art"><strong>Artworks</strong></Link>
         </nav>
       </section>
 
