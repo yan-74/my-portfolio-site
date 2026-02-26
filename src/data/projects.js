@@ -5,7 +5,8 @@ export default [
     description: "Full-stack data visualizer application using Video game sales and Google Trends datasets",
     tech: ["React", "Express.js", "MongoDB"],
     image: "assets/project1.png",
-    link: "https://github.com/yan-74/games-trends-analyzer"
+    link: "https://github.com/yan-74/games-trends-analyzer",
+    deployment: "https://five20-project-huang-ng-kim.onrender.com/"
   },
   {
     type: "image",

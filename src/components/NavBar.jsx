@@ -29,8 +29,8 @@ export default function Navbar() {
         )}
       </div>
       <div className="socials">
-        <a href="https://www.instagram.com/"><img src="assets/socials/insta.png"></img></a>
-        <a href="https://www.twitter.com/"><img src="assets/socials/twitter.png"></img></a>
+        <a href="https://www.instagram.com/ngyanchi/" target="_blank"><img src="assets/socials/insta.png"></img></a>
+        <a href="https://x.com/ZBlade17" target="_blank"><img src="assets/socials/twitter.png"></img></a>
         <a href="mailto:ngyanchi11@gmail.com" target="_blank"><img src="assets/socials/email.png"></img></a>
       </div>
     </nav>

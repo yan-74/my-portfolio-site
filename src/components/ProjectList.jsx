@@ -21,7 +21,15 @@ export default function ProjectList() {
               <img src={project.image} alt={project.title} />
             </div>
           )}
-          <h3>{project.title}</h3>
+          <h3>
+            {project.deployment ? (
+              <a href={project.deployment} target="_blank" rel="noopener noreferrer">
+                {project.title}
+              </a>
+            ) : (
+              project.title
+            )}
+          </h3>
           <p>{project.description}</p>
           <p><strong>Tech:</strong> {project.tech.join(", ")}</p>
           <a href={project.link} target="_blank">View on GitHub</a>
