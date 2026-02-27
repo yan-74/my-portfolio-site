@@ -17,6 +17,13 @@ export default function ArtList({ category }) {
             </div>
           )}
           <h4>{art.title}</h4>
+          {art.credit && (
+            <div className="art-credit">
+              <a href={art.credit} target="_blank" rel="noopener noreferrer">
+                Tutorial Credit
+              </a>
+            </div>
+          )}
           <h4>Medium: {art.Medium}</h4>
         </div>
       ))}

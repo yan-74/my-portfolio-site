@@ -36,9 +36,10 @@ export default [
   },
   {
     type: "3d",
-    title: "A Walk Through Death",
-    description: "A digital painting inspired by the game Genshin Impact, where the character Hu Tao walks through her interpretation of the afterlife to return to the living. This moment in the game really struck me, and I wanted to capture the ephemeral beauty of the scene through my art. This piece was quite challenging, as not only did I not have much experience with drawing full bodies, I had also not drawn water reflections before. I started this piece in around May of 2025, and procrastinated continuously due to how intimidating every part felt, eventually finishing it in Febuary of 2026. However, I pushed myself to try my best, to study references (both from the game and other pieces of art), and I feel like I learned a lot in the end, especially when it comes to lighting, color choices, and composition. Overall, I found the process of drawing something I clearly wasn't prepared for overwhelming, yet rewarding--in the future, I'd like to incorporate new techniques into my art in a more gradual way, but I'm proud of how this piece turned out and the progress I made through it.",
-    Medium: "Digital Painting on Sketchbook",
-    image: "assets/art/hu_tao.png",
+    title: "Master Sword",
+    description: "3D model of the Master Sword from The Legend of Zelda: Breath of the Wild, created in Blender 5.0. This was my first time doing 3D modeling, so I decided to follow a tutorial--I found one for creating a sword, so I decided to modify that into something I was familiar with and also simple enough to complete. I found it really difficult to get the proportions right, especially when it came to the hilt and the blade, but I kept adjusting and comparing it to reference images until I was satisfied. I also had fun experimenting with different materials and textures to try to make it look more realistic. I still spent a long time on it though, having to get used to the controls and workflow of Blender, and there were a few parts where I wanted to make changes but just didn't have the knowledge to know how to do it, like adding grooves into the hilt of the sword. Still satisfied with the final result, and I'm excited to try making more 3D models in the future! ",
+    Medium: "Blender 5.0",
+    image: "assets/art/master_sword_1.png",
+    credit: "https://www.youtube.com/watch?v=xr1lgLAragg&t=3468s"
   },
 ];

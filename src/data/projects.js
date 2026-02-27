@@ -7,7 +7,7 @@ export default [
     image: "assets/project1.png",
     link: "https://github.com/yan-74/games-trends-analyzer",
     deployment: "https://five20-project-huang-ng-kim.onrender.com/"
-  },
+  },/*
   {
     type: "image",
     title: "Barber Shop Booking Website",
@@ -15,7 +15,7 @@ export default [
     tech: ["Python", "Flask", "JavaScript"],
     image: "assets/project2.png",
     link: "https://github.com/yan-74/barber-shop-app/tree/Deployment"
-  },
+  },*/
   {
     type: "video",
     title: "MonoGame Fireworks Simulator",

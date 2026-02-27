@@ -43,3 +43,12 @@
     padding-left: 10rem; /* inner gutter: adjust as desired */
     padding-right: 10rem;
 }
+
+/* Credit link styling */
+.art-credit a{
+    color: var(--accent);
+    text-decoration: none;
+}
+.art-credit a:hover{
+    text-decoration: underline;
+}
