@@ -9,6 +9,7 @@ export default function ArtLanding() {
         <p>
           Welcome! Here's a collection of my digital and traditional artwork as an artist and illustrator. I'm currently busy learning 3D modeling and animation, obsessing over graphic design, and looking to improve my art skills every day!
         </p>
+        <p><strong>Click each image to see the description and view more!</strong></p>
       </section>
 
       <section className="gallery full-bleed">

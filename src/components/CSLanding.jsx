@@ -12,6 +12,7 @@ export default function CSLanding() {
           tools like <strong>React, Node.js, JavaScript, and Python</strong>. I am dedicated
           and flexible, <strong>excelling in team environments</strong>, and communication is one of my strengths.
         </p>
+        <p><strong>Click each image to see the description and view more!</strong></p>
       </section>
 
       <section id="projects">

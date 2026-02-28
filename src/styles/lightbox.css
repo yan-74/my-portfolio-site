@@ -1,0 +1,145 @@
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.7);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.lightbox-window {
+  position: relative;
+  width: min(100%, 980px);
+  height: min(92vh, calc(100dvh - 2rem));
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(2, 6, 23, 0.35);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background: rgba(2, 6, 23, 0.55);
+  color: var(--text);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lightbox-image-wrap {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  background: rgba(2, 6, 23, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 0.6rem 0.4rem;
+}
+
+.lightbox-image {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.lightbox-video {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.1rem;
+  height: 2.1rem;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  border-radius: 999px;
+  background: rgba(2, 6, 23, 0.65);
+  color: var(--text);
+  font-size: 1.4rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.lightbox-nav-left {
+  left: 0.7rem;
+}
+
+.lightbox-nav-right {
+  right: 0.7rem;
+}
+
+.lightbox-caption {
+  padding: 0.75rem 1.1rem 0.9rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.3);
+  background: rgba(2, 6, 23, 0.72);
+}
+
+.lightbox-caption h3 {
+  margin: 0 0 0.45rem;
+}
+
+.lightbox-caption p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.lightbox-footer {
+  margin-top: 0.65rem !important;
+  color: var(--muted) !important;
+  font-size: 0.85rem;
+}
+
+.lightbox-counter {
+  margin-top: 0.35rem !important;
+  color: var(--muted) !important;
+  font-size: 0.75rem !important;
+}
+
+@media (max-width: 640px) {
+  .lightbox-caption {
+    padding: 0.65rem 0.85rem 0.8rem;
+  }
+
+  .lightbox-caption h3 {
+    font-size: 1rem;
+  }
+
+  .lightbox-caption p {
+    font-size: 0.76rem;
+    line-height: 1.35;
+  }
+
+  .lightbox-footer {
+    font-size: 0.78rem;
+  }
+
+  .lightbox-nav {
+    width: 1.9rem;
+    height: 1.9rem;
+    font-size: 1.2rem;
+  }
+}

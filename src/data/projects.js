@@ -2,7 +2,8 @@ export default [
   {
     type: "image",
     title: "Video Game Trends Analyzer",
-    description: "Full-stack data visualizer application using Video game sales and Google Trends datasets",
+    short_description: "Full-stack data visualizer application using Video game sales and Google Trends datasets. Teammates: Sungeun Kim and Jennifer Huang",
+    description: "This web app displays data from two datasets: video game sales and Google trends data. We transform and load the data into Mongo, then serve it through a Node/Express API and visualize it with React through data charts and forms. Our goal with this project is to explore the connection between pop culture search trends and video game sales performances for a given year from 2001 - 2016 and look for correlations. I got much more familiar with React and using chart libraries through this project, and it inspired me to create more websites like this portfolio site to practice my front-end skills and share my work!",
     tech: ["React", "Express.js", "MongoDB"],
     image: "assets/project1.png",
     link: "https://github.com/yan-74/games-trends-analyzer",
@@ -19,7 +20,8 @@ export default [
   {
     type: "video",
     title: "MonoGame Fireworks Simulator",
-    description: "A MonoGame-based application that simulates fireworks physics and particles, featuring custom firework displays",
+    short_description: "A MonoGame-based application that simulates fireworks physics and particles, featuring custom firework displays",
+    description: "This is a fireworks simulator built using MonoGame, where I implemented physics and particle systems to create realistic firework effects. The application allows users to shoot different kinds of fireworks, and aim using the shooting mode with scrollwheel input. I learned a lot about game development concepts like game loops, rendering, and user input handling while working on this project. It was a fun way to apply my programming skills in a creative context!",
     tech: ["C#", "MonoGame"],
     video: "https://www.youtube.com/embed/hYLcDrwOMYE",
     link: "https://github.com/yan-74/fireworks-simulator"
@@ -27,7 +29,8 @@ export default [
   {
     type: "image",
     title: "AscendBook: Book Reading App",
-    description: "Android application that allows users to read, search, download, or listen to books via TTS",
+    short_description: "Android application that allows users to read, search, download, or listen to books via TTS. Teammates: David Cabanas Chiong and Janelle Annes Reyes",
+    description: "This is an Android application built with Jetpack Compose that allows users to read, search, download, or listen to books via text-to-speech. We fetched book data from Project Gutenberg and implemented features like a search bar, book details page, and TTS functionality. This project was a great opportunity for me to learn about Android development and work with new tools and libraries, however coding with Kotlin was quite frustrating (especially the syntax). It was something unique to experiment with, and though I struggled a lot with the coding process, I'm glad I stepped out of my comfort zone and was able to create a functional app in the end.",
     tech: ["Kotlin", "Jetpack Compose", "SQLite/Room"],
     image: "assets/project4.png",
     link: "https://github.com/yan-74/ascend-book-app"

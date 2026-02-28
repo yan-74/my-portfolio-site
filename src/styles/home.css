@@ -41,6 +41,16 @@
 
 .home-landing a {
   font-size: 1.5rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.home-landing a:visited {
+  color: var(--accent);
+}
+
+.home-landing a:hover {
+  text-decoration: underline;
 }
 .about {
   display: flex;
@@ -100,4 +110,54 @@
 
 .about-text ul{
     list-style: disc;
+}
+
+.portfolio-index {
+  width: min(1100px, 96%);
+  background-color: var(--card);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  text-align: center;
+}
+
+.portfolio-index-title {
+  margin: 0;
+}
+
+.portfolio-index-intro {
+  margin: 0.5rem 0 1.25rem;
+  color: var(--muted);
+}
+
+.portfolio-index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  text-align: left;
+}
+
+.portfolio-index-card {
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.portfolio-index-card h4 {
+  margin: 0 0 0.65rem;
+}
+
+.portfolio-index-card ul {
+  margin: 0;
+  padding-left: 1rem;
+  list-style: disc;
+}
+
+.portfolio-index-card li {
+  margin-bottom: 0.4rem;
+}
+
+.portfolio-index-card a {
+  font-size: 1rem;
 }
