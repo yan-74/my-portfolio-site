@@ -77,3 +77,7 @@ ul.icons a:hover img {
   margin: 1rem auto;
   text-align: left; /* keep items readable */
 }
+
+.instructions {
+  color: #f5756c;
+}
