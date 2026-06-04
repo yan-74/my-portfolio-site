@@ -10,18 +10,27 @@ export default function ImageLightbox({
   footer,
   onClose,
 }) {
-  const imageList = useMemo(() => {
-    if (Array.isArray(images) && images.length) return images;
-    if (image) return [image];
-    return [];
-  }, [images, image]);
+  const mediaList = useMemo(() => {
+    const list = [];
+
+    if (video) {
+      list.push({ type: "video", src: video });
+    }
+
+    if (Array.isArray(images) && images.length) {
+      list.push(...images.map((src) => ({ type: "image", src })));
+    } else if (image) {
+      list.push({ type: "image", src: image });
+    }
+
+    return list;
+  }, [images, image, video]);
 
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const hasVideo = Boolean(video);
-  const hasMultiple = imageList.length > 1;
-  const safeIndex = imageList.length ? Math.min(activeIndex, imageList.length - 1) : 0;
-  const activeImage = imageList[safeIndex];
+  const hasMultiple = mediaList.length > 1;
+  const safeIndex = mediaList.length ? Math.min(activeIndex, mediaList.length - 1) : 0;
+  const activeMedia = mediaList[safeIndex];
 
   const handleClose = useCallback(() => {
     setActiveIndex(0);
@@ -29,24 +38,26 @@ export default function ImageLightbox({
   }, [onClose]);
 
   const goPrevious = useCallback(() => {
-    setActiveIndex((index) => (index - 1 + imageList.length) % imageList.length);
-  }, [imageList.length]);
+    setActiveIndex((index) => (index - 1 + mediaList.length) % mediaList.length);
+  }, [mediaList.length]);
 
   const goNext = useCallback(() => {
-    setActiveIndex((index) => (index + 1) % imageList.length);
-  }, [imageList.length]);
+    setActiveIndex((index) => (index + 1) % mediaList.length);
+  }, [mediaList.length]);
 
   useEffect(() => {
     if (!isOpen) return;
+
+    setActiveIndex(0);
 
     const onKeyDown = (event) => {
       if (event.key === "Escape") {
         handleClose();
       }
-      if (!hasVideo && hasMultiple && event.key === "ArrowLeft") {
+      if (hasMultiple && event.key === "ArrowLeft") {
         goPrevious();
       }
-      if (!hasVideo && hasMultiple && event.key === "ArrowRight") {
+      if (hasMultiple && event.key === "ArrowRight") {
         goNext();
       }
     };
@@ -58,9 +69,9 @@ export default function ImageLightbox({
       document.removeEventListener("keydown", onKeyDown);
       document.body.style.overflow = "";
     };
-  }, [goNext, goPrevious, handleClose, hasMultiple, hasVideo, isOpen]);
+  }, [goNext, goPrevious, handleClose, hasMultiple, isOpen]);
 
-  if (!isOpen || (!activeImage && !hasVideo)) return null;
+  if (!isOpen || !activeMedia) return null;
 
   return (
     <div className="lightbox-overlay" onClick={handleClose} role="presentation">
@@ -75,23 +86,23 @@ export default function ImageLightbox({
           ×
         </button>
         <div className="lightbox-image-wrap">
-          {hasVideo ? (
+          {activeMedia.type === "video" ? (
             <iframe
               className="lightbox-video"
-              src={video}
+              src={activeMedia.src}
               title={title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
           ) : (
-            <img src={activeImage} alt={title} className="lightbox-image" />
+            <img src={activeMedia.src} alt={title} className="lightbox-image" />
           )}
-          {!hasVideo && hasMultiple && (
+          {hasMultiple && (
             <button className="lightbox-nav lightbox-nav-left" onClick={goPrevious} aria-label="Previous image">
               ‹
             </button>
           )}
-          {!hasVideo && hasMultiple && (
+          {hasMultiple && (
             <button className="lightbox-nav lightbox-nav-right" onClick={goNext} aria-label="Next image">
               ›
             </button>
@@ -101,7 +112,7 @@ export default function ImageLightbox({
           <h3>{title}</h3>
           {description && <p>{description}</p>}
           {footer && <p className="lightbox-footer">{footer}</p>}
-          {!hasVideo && hasMultiple && <p className="lightbox-counter">Image {safeIndex + 1} / {imageList.length}</p>}
+          {hasMultiple && <p className="lightbox-counter">Item {safeIndex + 1} / {mediaList.length}</p>}
         </div>
       </div>
     </div>

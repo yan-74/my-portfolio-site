@@ -35,7 +35,10 @@ export default function ProjectList() {
               </div>
             ) : (
               <button className="project-image project-image-button" onClick={() => setSelectedProject(project)}>
-                <img src={project.image} alt={project.title} />
+                <img
+                  src={Array.isArray(project.images) && project.images.length ? project.images[0] : project.image}
+                  alt={project.title}
+                />
               </button>
             )}
             <h3>
@@ -60,6 +63,7 @@ export default function ProjectList() {
         isOpen={Boolean(selectedProject)}
         title={selectedProject?.title}
         image={selectedProject?.image}
+        images={selectedProject?.images}
         video={selectedProject?.video}
         description={selectedProject?.description}
         footer={selectedProject ? `Tech: ${selectedProject.tech.join(", ")}` : ""}
