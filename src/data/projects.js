@@ -16,8 +16,8 @@ export default [
     short_description: "Desktop Application for downloading and filtering 3D assets from Autodesk Flow/Shotgrid in an organised manner. Teammates: Shuyuan Yin",
     description: "For my internship project, I worked with stakeholders from the Dawson 3D Animation department to develop a desktop application that allows professors to download and filter student projects and files in bulk from the Autodesk Flow API. Users can do bulk zip downloads for projects/files, or download them individually in sequence, as well as filter and sort them by various fields. This was a really rewarding experience, as I got to work with industry professionals and practice professional skills like communication, coordinating meetings, and understanding user requirements. It was also a great opportunity to learn about Electron and how to build desktop applications, and it was nice to build something that would directly help the people who use it.",
     tech: ["React", "Express.js", "Electron", "Autodesk Flow/Shotgrid"],
-    image: "assets/projects/3d-downloader/3d-2.png",
-    images: ["assets/projects/3d-downloader/3d-2.png", "assets/projects/3d-downloader/3d-1.png", "assets/projects/3d-downloader/3d-3.png", "assets/projects/3d-downloader/3d-4.png", "assets/projects/3d-downloader/3d-5.png", "assets/projects/3d-downloader/3d-6.png"],
+    image: "assets/projects/3d-downloader/Downloader_Icon1.png",
+    images: ["assets/projects/3d-downloader/Downloader_Icon 1.png", "assets/projects/3d-downloader/3d-2.png", "assets/projects/3d-downloader/3d-1.png", "assets/projects/3d-downloader/3d-3.png", "assets/projects/3d-downloader/3d-4.png", "assets/projects/3d-downloader/3d-5.png", "assets/projects/3d-downloader/3d-6.png"],
     link: "https://github.com/yan-74/dawson-3d-asset-downloader"
   },
   {
