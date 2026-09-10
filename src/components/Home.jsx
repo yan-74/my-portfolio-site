@@ -45,15 +45,6 @@ export default function Home() {
 
         <div className="portfolio-index-grid">
           <div className="portfolio-index-card">
-            <h4>Portfolio Site</h4>
-            <ul>
-              <li>
-                <Link to="/">Personal Portfolio Website (this site)</Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="portfolio-index-card">
             <h4>Computer Science Projects</h4>
             <ul>
               {projectItems.map((item) => (
