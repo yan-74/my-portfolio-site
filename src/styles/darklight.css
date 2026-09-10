@@ -1,0 +1,39 @@
+.light{
+  --bg: white;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --card: #020617;
+}
+
+
+
+
+/* ---------- Light/Dark Mode Toggle ---------- */
+.theme-toggle{
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 50;
+
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+
+  display: grid;
+  place-items: center;
+
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.theme-toggle img,
+.theme-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+  color: white;
+}
